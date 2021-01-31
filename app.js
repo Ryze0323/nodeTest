@@ -25,18 +25,6 @@ app.use('/users', usersRouter);
 
 app.use('/api/dataset', dataset);
 
-// const mongoose = require('mongoose')
-// // CONNECT TO MONGODB SERVER
-// mongoose.connect('mongodb+srv://user:1409korea@cluster0.fhnyc.mongodb.net/Cluster0?retryWrites=true&w=majority', {
-//     useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false
-// }).then(() => console.log('MongoDB connected...'))
-// .catch(error => console.log(error))
-// var db = mongoose.connection;
-// db.on('error', console.error);
-// db.once('open', function(){
-//     // CONNECTED TO MONGODB SERVER
-// });
-
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
